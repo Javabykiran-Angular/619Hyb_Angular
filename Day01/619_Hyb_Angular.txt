@@ -1,0 +1,46 @@
+			Welcome To Angular Module 
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+
+
+
+- Daily Session will be there mon t sat 
+- 1.30 hr Avg duration it may increase or it may be decrease it depends on topic 
+- All recording will be given => on poratl 
+- Ensure u r in 619 whts group 
+- All interview Given on portal 
+- Project work will learn in topic 
+- Sharp 4.30 pm Batch 
+- Two way communication required 
+- Duration is 25 working days 
+
+From Ur side
+1 OOPS concept 
+2 Basics of Html & css is reuired
+3 Regularity of the session. 
+4 Daily Practice Is required
+
+- Angular Freamwork 
+- We learn industry use cases
+- All gadets or laptopm switch it 
+- Angular js is outdated 
+- Angular 2/4/5.../17
+- Angular 12 => Stable version 
+
+
+Git Hub Repo 
+https://github.com/Javabykiran-Angular/619Hyb_Angular.git
+
+
+
