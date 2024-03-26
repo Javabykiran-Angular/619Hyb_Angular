@@ -1,0 +1,22 @@
+<p>propertybinding works!</p>
+
+<!-- if u want bind any property dynamically to any Html attribute/directive/custom Attritbute 
+    synatx => [attribute name / directive/ custom attribute]="propertyname"
+-->
+
+<input type="text" [value]="name" placeholder="Enter The Name"><br><br>
+
+<img class="imgClass" [src]="imgUrl" alt="">
+<hr>
+
+<div>
+    Difference between String interpolation and Property Binding
+</div>
+
+<div hidden = "{{isHidden}}">
+    Display the Text using String Interpolatipon 
+</div>
+
+<div [hidden] = "isHidden">
+    Display the Text using Property binding 
+</div>

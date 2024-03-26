@@ -1,0 +1,83 @@
+Last Lecture Agenda
+1 Angular Application Flow 
+2 What is components
+	
+	- Angular is components orientated Arch.
+	1 view file  => .html => only one 
+	2 stylesheet file => .css => multiple 
+	3 component file => .ts => only one 
+	4 testing file => .spec.ts 
+	
+	
+3 how to create components
+	1 manually 
+	2 cli 
+	ng g c student 
+4 Bootstrap 
+	- It is css Freamwork
+	- Template syntax 
+	- Makes ur application attractive
+	- makes ur application responsive
+	
+	1 Online integration
+		24*7 internet 
+	2 offline integration 
+		npm install bootstrap@5.0.2 --save 
+	
+
+summary & Interview Questions
+1 Explain Angular Application Flow 
+2 What is components
+3 how to create components
+
+Today's Lecture Agenda
+1 Data Binding
+	- It is used to display data dynamically on ur component 
+	- data flow from component file(.ts ) to view file (.html )
+	1 One way Data binding
+		data flow from component file(ts ) to view file (.html )
+	2 two daya data binding
+2 String interpolation
+3 Property Binding
+4 Difference between String interpolation and Property Binding
+
+
+summary & Interview Questions
+1 What is Data Binding?
+2 Explain One Data Binding?
+3 What is String interpolation
+4 What is Property Binding
+5 Explain the Difference between String interpolation and Property Binding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
