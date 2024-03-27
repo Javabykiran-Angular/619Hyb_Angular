@@ -1,0 +1,99 @@
+Last Lecture Agenda
+1 Data Binding
+	- It is used to display data dynamically on ur component 
+	- data flow from component file(.ts ) to view file (.html )
+	1 One way Data binding
+		data flow from component file(ts ) to view file (.html )
+	2 two daya data binding
+2 String interpolation
+	To display Html Content dynamically 
+		{{propertyname}}
+		
+		<h2> {{name}}</h2>
+		<h2> {{"Hi Welcome "+name}}</h2>
+		<img src=" {{imgUrl}} ">
+		
+		.ts file 
+		name:string='Sumit';
+		imgUrl:string='../../assets/tka.jpeg';
+		
+		
+		
+3 Property Binding
+	
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	.ts file 
+	name:string='Sumit';
+	imgUrl:string='...';
+	
+	
+	
+	
+4 Difference between String interpolation and Property Binding
+
+<div hidden="{{isHidden}}">
+....
+</div>
+
+<div [hidden]="isHidden">
+....
+</div>
+
+.ts 
+isHidden:boolean=false;
+
+
+summary & Interview Questions
+1 What is Data Binding?
+2 Explain One Data Binding?
+3 What is String interpolation
+4 What is Property Binding
+5 Explain the Difference between String interpolation and Property Binding
+
+
+Today's Lecture Agenda
+1 Style Binding
+
+	{
+		"id":"9",
+		"name":"sumit"
+	}
+
+2 Class Binding
+
+summary & Interview Questions
+1 How to use Style Binding
+2 How to use Class Binding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
