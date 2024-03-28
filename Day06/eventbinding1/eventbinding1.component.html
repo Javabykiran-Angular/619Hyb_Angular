@@ -1,0 +1,23 @@
+<p>eventbinding1 works!</p>
+
+<!-- syntax
+    (eventname)="eventhandler"
+    - U can apply any HTML Tag 
+-->
+
+<button (click)="onSend()" >Send</button> <br><br>
+<img src="../../assets/tka.jpeg" alt="" (click)="onImage()" title="OnClick this image" >
+<br><br>
+<!-- $event 
+    - It is special variable given by angular 
+    - It gives current DOM Element information of that particular element 
+    - We can only access the data/information but we can not change that data 
+-->
+
+
+
+<button value="Doller data..." (click)="onDollerEvent($event)" >Doller Event </button>
+
+
+
+
