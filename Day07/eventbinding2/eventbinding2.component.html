@@ -1,0 +1,49 @@
+<p>eventbinding2 works!</p>
+
+<!-- template reference variable 
+    - u can get the object /handle of that particular element
+    - u can access or manipulate the data as well as behaviour of that element 
+    - U can apply any html tag 
+    - #uniquename
+
+-->
+
+<!-- <input #inputname  type="text" class="form-control w-25" placeholder="Enter the Name "><br><br>
+<button class="btn btn-success" (click)="onClick(inputname)" >Click</button>
+<br>
+<br>
+<input #inputname1  type="text" class="form-control w-25" placeholder="Enter the Name "><br><br>
+<button class="btn btn-success" (click)="onClick1(inputname1.value)" >Click</button> -->
+<hr>
+
+<div class="container" >
+    <div class="mt-2 mb-2">
+        <label for="">Number 1::</label>
+        <input #num1 type="number" class="form-control" placeholder="Enter the Number 1 ">
+        <br>
+        <label for="">Number 2::</label>
+        <input #num2 type="number" class="form-control" placeholder="Enter the Number 2 ">
+
+        <br>
+        <button class="btn btn-success" (click)="onAddition(num1.value,num2.value)" >Addition</button>
+        <br><br>
+        <label for="">Result::</label>
+        <input [value]="result" type="text" class="form-control" placeholder="Enter the  Result">
+
+    </div>
+</div>
+
+<hr>
+
+<!-- ngModel
+    - It is Attribute Directive
+    - FormsModule => Import in app.module.ts file => In Import Section 
+    - U get Updatated Data into the property 
+    - notation is Banana in the box 
+    [(ngModel)]="PropertyName"
+    - u can apply any tag as per Ur requirement 
+-->
+
+<input class="form-control w-25"  
+    [(ngModel)]="name"
+type="text" placeholder="Enter the Name " > {{name}}

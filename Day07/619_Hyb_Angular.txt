@@ -1,0 +1,75 @@
+Last Lecture Agenda
+1 Event Binding
+	- data/request flow from view file to componet file 
+2 Click Event
+	- It is event given by angular 
+	.html 
+	<button (click)="onClick()">
+	<img src=".." (click)="onImage()">
+	
+	.ts 
+	onClick(){
+		console.log("Click Event Occur...")
+	}
+	
+	onImage(){
+	...
+	}
+	
+3 $event
+	- 
+	
+	<button value="Doller Event..." (click)="onDoller($event)">
+	
+	.ts 
+	onDoller(myevent:any){
+		console.log(myevent);
+		myevent.target.value 
+	}
+	
+summary & Interview Questions
+1 Explain event Binding
+2 How $event works?
+
+
+
+Today's Lecture Agenda
+1 template ref Variable
+2 Real time Example
+3 Two Way Data Binding 
+
+
+
+summary & Interview Questions
+1 How template ref Variable is used
+2 Why we used template ref Variable?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
