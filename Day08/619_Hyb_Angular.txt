@@ -1,0 +1,100 @@
+Last Lecture Agenda
+1 template ref Variable
+	<input #inputname >
+	<button (click)="onClick(inputname)">  
+		<input #inputname1 >
+	<button (click)="onClick1(inputname1.value)">  
+	
+	.ts 
+	
+	onClick(inputname:any){
+		console.log(inputname);
+		console.log(inputname.value);
+		inputname.style.background="green";
+		inputname.style.color="white";
+		
+	}
+	
+	onClick1(myvalue:string){
+		console.log(myvalue);
+	}
+2 Real time Example
+
+	<input #num1>
+	<input #num2>
+	<button (click)="onAddition(num1.value,num2.value)" >
+	<input [value]="result">
+	
+	.ts
+	onAddition(num1:any,num2:any){
+	let n1=+num1;
+	let n2=+num2;
+	
+		this.result=n1+n2;
+	}
+
+3 Two Way Data Binding 
+	- ngModel
+	- It is attribute directive
+	
+	<input [(ngModel)]="name">
+	
+	.ts 
+	name:string='';
+
+
+
+summary & Interview Questions
+1 How template ref Variable is used
+2 Why we used template ref Variable?
+
+Today's Lecture Agenda
+1 Change Event 
+2 K/B Event 
+	1 keyup
+	2 keydown
+3 Event Binding Without Event Handler
+4 Structural Directives
+	1 *ngIf => on the basic condition u can show or hide any html element 
+	2 *ngFor => to perform dynamic iteration  
+	3 *ngSwitch => to execute a specific condition 
+5 *ngIf directive
+6 ng-template => It is component Directive 
+7 *ngFor directive
+
+	
+
+summary & Interview Questions
+1 How to use change event?
+2 How to perform Event Binding Without Event Handler?
+3 Explain Structural Directives
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

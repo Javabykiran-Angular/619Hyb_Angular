@@ -1,0 +1,16 @@
+<p>fordirective works!</p>
+<!-- syntax
+    *ngFor="let item of arrayname"
+-->
+
+<!-- <ul>
+   <li *ngFor="let item of course">
+    {{item}}    
+    </li>
+</ul> -->
+
+<ul>
+    <li *ngFor="let item of course;index as i">
+      {{i+1}} {{item}}    
+     </li>
+ </ul>

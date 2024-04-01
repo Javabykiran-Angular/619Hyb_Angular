@@ -1,0 +1,11 @@
+<p>eventbinding3 works!</p>
+
+<input type="text" (change)="onChange()" 
+class="form-control w-25"
+placeholder="Enter the Name" >
+<br><br>
+<input type="text" (keyup)="onKeyup()" placeholder="key up Event "><br><br>
+
+<input type="text" (keydown)="onKeydown()" placeholder="key down Event "><br><br>
+
+<button (click)="result=8+8" >Addition</button>{{result}}
