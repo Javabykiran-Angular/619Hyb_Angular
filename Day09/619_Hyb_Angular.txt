@@ -1,0 +1,118 @@
+Last Lecture Agenda
+1 Change Event 
+	<input (change)="onChange()">
+	
+	.ts 
+	
+	onChange(){
+		console.log("...");
+	}
+2 K/B Event 
+	1 keyup
+		<input (keyup)="onKeyup()">
+		
+		.ts 
+		onKeyup(){
+		...
+		}
+	2 keydown
+	
+		<input (keydown)="onKeydown()">
+		
+		.ts file 
+		onKeydown(){
+			
+		}
+3 Event Binding Without Event Handler
+		<button (click)="result=8+8">
+		
+		.ts 
+		result:number=0;
+		
+	
+4 Structural Directives
+	1 *ngIf => on the basic condition u can show or hide any html element 
+	2 *ngFor => to perform dynamic iteration  
+	3 *ngSwitch => to execute a specific condition 
+5 *ngIf directive
+	<div *ngIf="rating<4;else myelsepart">
+		....
+	</div>
+	
+	<ng-template #myelsepart >
+		....
+	</ng-template>
+	
+	.ts 
+	rating:number=2;
+	
+6 ng-template => It is component Directive 
+7 *ngFor directive
+	.ts 
+	course:string[]=[....];
+	
+	.html
+	<ul>
+		<li *ngFor="let item of course;index as i">{{i+1}} {{item}}</li>	
+	</ul>		
+
+	
+
+summary & Interview Questions
+1 How to use change event?
+2 How to perform Event Binding Without Event Handler?
+3 Explain Structural Directives
+
+Today's Lecture Agenda
+1 *ngFor directive
+2 *ngSwitch directive
+
+summary & Interview Questions
+1 how to apply *ngFor to table 
+2 how *ngSwitch directive work
+
+
+public List<Employee> .....(){
+	...
+}
+
+Array of Object 
+[
+	{
+		id:9,
+		fname:'Sumit'
+	},
+	{
+		id:9,
+		fname:'Sumit'
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
