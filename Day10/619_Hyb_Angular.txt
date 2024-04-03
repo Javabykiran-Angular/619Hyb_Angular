@@ -1,0 +1,84 @@
+Last Lecture Agenda
+1 *ngFor directive
+	arrProduct=[
+		{
+			...
+		},
+		{
+		
+		}
+	];
+	
+	.html 
+	<table class="table table-bordered">
+		<thead>
+			...
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of arrProduct">
+				<td> {{i+1}} </td>
+				<td> {{item.name}} </td>
+				<td>{{item.price}}</td>
+				<td>{{item.qty}}</td>
+	
+2 *ngSwitch directive
+	
+	<input #inputcolor >
+		<button (click)="onSend(inputcolor.avlue)">
+		
+		<div [ngSwitch]="choice" >
+			<div *ngSwitchCase="'red'" [style.background]="choice" >
+				....
+			</div>
+			
+			<div *ngSwitchCase="'green'" [style.background]="choice" >
+				....
+			</div>
+			....
+			
+			<div *ngSwitchDefault [style.background]="choice==''?'black':'orange'" >
+				....
+			</div>
+		
+		</div>
+		
+		.ts
+		
+		onSend(colorname:string){
+			this.choice=colorname.toLowerCase().trim();
+		}
+
+summary & Interview Questions
+1 how to apply *ngFor to table 
+2 how *ngSwitch directive work
+
+
+public List<Employee> .....(){
+	...
+}
+
+Array of Object 
+[
+	{
+		id:9,
+		fname:'Sumit'
+	},
+	{
+		id:9,
+		fname:'Sumit'
+	}
+]
+
+
+Today's Lecture Agenda
+1 Component Interaction
+	- u can send a data(string/number/boolean/json/array/array of object) to others component
+	- To establish parent-child relation 
+2 @Input()
+	- To send data from parent component to child component
+3 @Output()
+	- To send data from child component to parent component 
+
+summary & Interview Questions
+1 What is component interaction
+2 How to achieve component interaction
