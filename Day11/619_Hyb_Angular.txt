@@ -1,0 +1,77 @@
+Last Lecture Agenda
+1 Component Interaction
+	- u can send a data(string/number/boolean/json/array/array of object) to others component
+	- To establish parent-child relation 
+2 @Input()
+	- To send data from parent component to child component
+	
+	parent.ts
+	
+	strdata:string='...';
+	
+	parent.html
+	
+	<app-child1 [parentStrdata]="strdata"> 
+	
+	child1.ts
+	@Input() parentStrdata:string='';
+	
+	.child1.html
+	{{parentStrdata}}
+	
+	
+3 @Output()
+	- To send data from child component to parent component 
+	
+	child1.html 
+	
+	<button (click)="onClick()">
+	
+	child1.ts
+	
+	@Output() childstrdata=new EventEmitter();
+	@Output() childArrdata=new EventEmitter();
+	strdata="....."
+	arrproduct=[
+		{
+		}
+	]
+	
+	onClick(){
+		this.childstrdata.emit(this.strdata)
+		this.childArrdata.emit(this.arrproduct)
+	}
+	
+	parent.html
+	{{dataReceived}}
+	....
+	
+	<app-child1 (childstrdata)="dataReceived=$event" 
+	
+		(childArrdata)="dataArr=$event"
+		>
+	
+	parent.ts 
+	dataReceived:string=''
+	dataArr:any[]=[]
+
+summary & Interview Questions
+1 What is component interaction
+2 How to achieve component interaction
+
+Today's Lecture Agenda
+1 Pipe
+	- if u want transform ur data then we use pipe 
+	- it never change ur original value 
+2 Inbuilt Pipe 
+3 Custom Pipe
+	- PipeTransform
+	- transform(){
+		
+	}
+	- @Pipe 
+	ng g p pipename
+
+summary & Interview Questions
+1 What is Pipe 
+2 Explain some pipe in angular?
