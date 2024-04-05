@@ -1,0 +1,78 @@
+Last Lecture Agenda
+1 Pipe
+	- if u want transform ur data then we use pipe 
+	- it never change ur original value 
+2 Inbuilt Pipe 
+	- uppercase,lowercase,titlecase
+	- percent
+	<h2> {{0.25 | percent}}</h2>
+	<h2> {{0.025 | percent:'1.1'}}</h2>
+	<h2> {{0.25 | currency}}</h2>
+	<h2> {{0.25 | currency:'INR':'code'}}</h2>
+	<h2> {{5.6783456 | number : '1.2-3'}}</h2>
+	<h2> {{mydate | date :'mediumDate'}}</h2>
+	<h2> {{mydate | date :'longDate'}}</h2>
+	<h2> {{mydate | date :'dd-MM-yyyy'}}</h2>
+	
+	<h2> {{mydate | date :'longDate'| uppercase}}</h2>
+3 Custom Pipe
+	- PipeTransform
+	- transform(){
+		
+	}
+	- @Pipe 
+	ng g p pipename
+	
+	suumarry.pipe.ts
+	
+	@Pipe({
+		name:'summary'
+	})
+	export class SummaryPipe implemnets PipeTransform{
+		
+		transform(value:any,start:number=0,end:number=20){
+				let temp=(<string> value);
+				
+				return (temp.substring(start,end)+"...")
+		}
+	} 
+	
+	app.module.ts
+	declaration: [
+		SummaryPipe
+	]
+	
+	customPipe.comonent.html 
+	
+	{{strdetails | summary}}
+	{{strdetails | summary: 0:35}}
+	
+
+summary & Interview Questions
+1 What is Pipe 
+2 Explain some pipe in angular?
+
+Today's Lecture Agenda
+1 What it is Services?
+	- It is a Simple class 
+2 What is use of Service?
+	- it is used code resulabilty 
+	- it is used code  maintability 
+	- it is used to write a BL 
+	- It is used to connect ur backend server 
+	- It provides isolation to the component
+	- U can use service auth purpose 
+	- Use DI For the service to use in any resourse 
+	
+	ng g s servicename
+	
+3 How to Use Dependancy Injection
+4 Where to use Service?
+
+summary & Interview Questions
+
+1 What it is Services?
+2 What is use of Service?
+3 How to Use Dependancy Injection
+4 Where to use Service?
+
