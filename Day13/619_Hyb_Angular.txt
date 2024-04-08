@@ -1,0 +1,129 @@
+Last Lecture Agenda
+1 What it is Services?
+	- It is a Simple class 
+2 What is use of Service?
+	- it is used code resulabilty 
+	- it is used code  maintability 
+	- it is used to write a BL 
+	- It is used to connect ur backend server 
+	- It provides isolation to the component
+	- U can use service auth purpose 
+	- Use DI For the service to use in any resourse 
+	
+	ng g s servicename
+	
+	export class CourseService{
+		private course:string[]=[...];
+		
+		getCourse(){
+			return this.course;
+		}
+	}
+	
+	constructor(private service:CourseService){
+	}
+	
+	ngOninit(){
+		this.course=this.service.getCourse();
+	}
+	
+	cousre.html
+	
+	<ul>
+		<li *ngFor="let item of course;index as i">
+			{{i+1}} {{item}}
+		</li>
+	</ul>
+	
+	
+	app.module.ts 
+	
+	providers:[
+	CourseService
+	]
+	
+	
+	
+3 How to Use Dependancy Injection
+4 Where to use Service?
+
+summary & Interview Questions
+
+1 What it is Services?
+2 What is use of Service?
+3 How to Use Dependancy Injection
+4 Where to use Service?
+
+Today's Lecture Agenda
+1 Http Methods
+	1 get => fetch the data from backend server 
+	2 post => to create/send a data to ur backend server from front end server 
+	3 put => to update a particular record 
+	4 delete => to delete a particular record
+	
+	HttpProtocol => set of rules 
+	
+2 Http Request & Http Response
+	
+	Http Request
+		2 parts 
+		1 Http header
+			- ip
+			- method
+			- date & time 
+			- Auth token
+			- content Type 
+				- image 
+				- pdf
+				- json
+				- text 
+				...
+		2 Http body
+			- data 
+				- json 
+				- text 
+				- xml data (outadated)
+				
+Http Response
+		2 parts 
+		1 Http header
+			- ip
+			- method
+			- date & time 
+			- Auth token
+			- content Type 
+				- image 
+				- pdf
+				- json
+				- text 
+				...
+				
+			-  status code 
+				1 2xx => (200-299) => success,ok 
+				2 3xx => (300-399) => redirection
+				3 4xx => (400-499) => client side error 
+				4 5xx => (500-599) => Server side error 
+			
+		2 Http body
+			- data 
+				- json 
+				- text 
+				- xml data (outadated)
+	
+	
+	
+3 HttpClientModule => we can import in app.module.ts file => import section 
+HttpClient => service 
+
+4 https://jsonplaceholder.typicode.com/posts
+	- It is a fake service => add/update/delete that record will not added into the database but it gives a response of ur request 
+
+5 @Injector
+6 Observabale
+
+ summary & Interview Questions
+ 1 Which are Http Methods?
+ 2 How to connect Angular with backend server?
+ 3 Write down the steps to connect your backend server?
+ 4 Explain the Observabale?
+ 5 What is Observabale?
