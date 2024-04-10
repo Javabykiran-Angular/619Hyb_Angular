@@ -1,0 +1,85 @@
+Last Lecture Agenda
+1 Http Methods
+	1 get => fetch the data from backend server 
+	2 post => to create/send a data to ur backend server from front end server 
+	3 put => to update a particular record 
+	4 delete => to delete a particular record
+	
+	HttpProtocol => set of rules 
+	
+2 Http Request & Http Response
+	
+	Http Request
+		2 parts 
+		1 Http header
+			- ip
+			- method
+			- date & time 
+			- Auth token
+			- content Type 
+				- image 
+				- pdf
+				- json
+				- text 
+				...
+		2 Http body
+			- data 
+				- json 
+				- text 
+				- xml data (outadated)
+				
+Http Response
+		2 parts 
+		1 Http header
+			- ip
+			- method
+			- date & time 
+			- Auth token
+			- content Type 
+				- image 
+				- pdf
+				- json
+				- text 
+				...
+				
+			-  status code 
+				1 2xx => (200-299) => success,ok 
+				2 3xx => (300-399) => redirection
+				3 4xx => (400-499) => client side error 
+				4 5xx => (500-599) => Server side error 
+			
+		2 Http body
+			- data 
+				- json 
+				- text 
+				- xml data (outadated)
+	
+	
+	
+3 HttpClientModule => we can import in app.module.ts file => import section 
+HttpClient => service 
+
+4 https://jsonplaceholder.typicode.com/posts
+	- It is a fake service => add/update/delete that record will not added into the database but it gives a response of ur request 
+
+5 @Injector
+6 Observabale
+
+ summary & Interview Questions
+ 1 Which are Http Methods?
+ 2 How to connect Angular with backend server?
+ 3 Write down the steps to connect your backend server?
+ 4 Explain the Observabale?
+ 5 What is Observabale?
+
+Today's Lecture Agenda
+1 Post method
+2 put method 
+3 delete method
+4 Handling Error 
+
+summary & Interview Questions
+1 How to send data from Angular to backend server?
+2 How to Update any particular data in Angular?
+3 How delete method Works in angular?
+
