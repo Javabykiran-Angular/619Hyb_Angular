@@ -1,0 +1,93 @@
+Last Lecture Agenda
+1 Post method
+	<input #inputTitle>
+	<input #inputbody>
+	<button (click)="onSned(inputTitle.value,inputbody,value)">
+	.ts 
+	onSned(inputTitle:any,inputBody:any){
+	
+	let obj={
+		title:inputTitle,
+		body:inputBody
+		}
+		this.service.PostData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+	}
+	
+	service.ts
+	PostData(obj:any){
+		return (this.http.post(this.baseUrl,obj));
+	}
+2 put method 
+
+	<input [(ngModel)]="id">
+	<input [(ngModel)]="title">
+	<input [(ngModel)]="body">
+	<button (click)="onupdate()">
+	
+	.ts
+	onEdit(item:any ){
+		this.id=item.id;
+		...
+	}
+	
+	onupdate(){
+		let obj ={
+			id:this.id,
+			title:this.title,
+			...
+		}
+		this.service.UpdateData(obj)
+		.subscribe((response)=>{
+			....
+		})
+	}
+	
+	service.ts
+	UpdateData(obj:any){
+		return (this.http.put(`${this.url}updatedata/${obj.id}`,obj));
+	}
+
+3 delete method
+	
+		ondelete(id:any){
+		this.service.deleteData(id)
+		.subscribe((response)=>{
+		....
+		},(myerror)=>{
+			alert("...");
+		})
+		}
+	service.ts
+	deleteData(id:any){
+		return this.http.delete(`${this.url}/${id}`);
+	}
+4 Handling Error 
+
+summary & Interview Questions
+1 How to send data from Angular to backend server?
+2 How to Update any particular data in Angular?
+3 How delete method Works in angular?
+
+Today's Lecture Agenda
+1 Routing
+	- navigate from one component to another component
+	- we can send a parameter(data)
+2 Routing Steps
+	1 configure route 
+	2 use <router-outlet> => component directive 
+	3 establish the link/navigate  between component
+3 routerLink
+4 wild cart operator
+5 empty path
+6 send parameter
+
+summary & Interview Questions
+1 What is Routing
+2 How to implement routing?
+3 what is purpose of routerLink?
+4 what is use of wild cart operator?
+5 What is empty path?
+
