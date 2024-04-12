@@ -1,0 +1,79 @@
+Last Lecture Agenda
+1 Routing
+	- navigate from one component to another component
+	- we can send a parameter(data)
+2 Routing Steps
+	1 configure route 
+		
+		app-routing.ts
+		const routes:Routes[]=[
+			{
+				path:"",component:HomeComponet
+			},
+			{
+				path:"Page1",component:Page1Component
+			},
+			{
+				path:"Page2/:id",component:Page2Component
+			},
+			...
+			
+			{
+				path:"**",component:NotFoundComponent
+			}
+		]
+		
+	2 use <router-outlet> => component directive 
+		app.component.html
+		<router-outlet>
+	3 establish the link/navigate  between component
+	
+		home.html
+		<a routerLink="/Page1">Page1</a>
+		<a [routerLink]="['/Page2',myid]">Page2</a>
+		...
+		
+		home.ts 
+		
+		myid:number=9;
+		
+		page2.ts
+		
+		myid:number=0;
+		
+		constructor(private route:ActivatatedRoute){}
+		
+		ngOnInit(){
+			this.getDataFromUrl();
+		}
+		
+		getDataFromUrl(){
+			this.route.ParamMap
+			.subscribe((param:any)=>{
+				this.myid=+param.get("id");
+			})
+		}
+	
+3 routerLink
+4 wild cart operator
+5 empty path
+6 send parameter
+
+summary & Interview Questions
+1 What is Routing
+2 How to implement routing?
+3 what is purpose of routerLink?
+4 what is use of wild cart operator?
+5 What is empty path?
+
+Today's Lecture Agenda
+1 Routing using navigate method
+	- it is used in ts file 
+2 Lazy Loading
+3 Create Custom Module
+4 Create Custom routing file
+
+summary & Interview Questions
+1 What is Lazy Loading?
+2 How to use navigate method
+
