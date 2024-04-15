@@ -1,0 +1,76 @@
+Last Lecture Agenda
+1 Routing using navigate method
+	- it is used in ts file 
+	constructor(private router:Router){}
+	
+	onPage1(){
+		this.router.navigate(['/Page1'])
+	}
+	
+	onPage2(){
+		this.router.navigate(['/Page1',this.myid])
+	}
+	...
+	
+	.html 
+	<button (click)="onPage1()">
+	
+2 Lazy Loading
+3 Create Custom Module
+4 Create Custom routing file
+
+ng g m user --routing 
+
+adduser,updateuser,deleteuser
+
+user-routing.module.ts 
+	[
+		{
+			path:"",component:ListUserComponet
+		},
+	
+		{
+			path:"adduser",component:AddUserComponent
+		}
+		....
+	]
+	
+	app-routing.module.ts
+	[
+		{
+			path:"user",loadchildren:()=>import(./user/user.module).then(m=>m.UserModule)
+		}
+	]
+
+summary & Interview Questions
+1 What is Lazy Loading?
+2 How to use navigate method
+
+Today's Lecture Agenda
+1 Template Driven Form (TDF)
+	- login,signup,f/b form 
+	- All basic level validation is done on view file 
+2 FormControl
+	- It is simple class 
+	1 valid => true/false 
+	2 invalid => true/false 
+	3 touched => true /false 
+	4 pristine => true / false 
+	5 dirty  =>  rrue /false 
+	6 errors  => Internally It is Object 
+	
+	
+3 How to use FormControl
+
+	steps 
+	1 Create a instance of FormControl => we use ngmodel but without using notation and we have to use name attribute 
+	2 create template ref variable & assign the ngModel 
+	3 to perform validation we use errors object & used required attribute 
+
+4 ngForm => Attribute Directive => Internally it is a class 
+
+summary & Interview Questions
+1 What is Template Driven Form
+2 What is FormControl?
+3 How to Use FormControl?
+
