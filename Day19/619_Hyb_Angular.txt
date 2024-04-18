@@ -1,0 +1,52 @@
+Last Lecture Agenda
+1 Test Conducted
+
+summary & Interview Questions
+Not Allowed
+
+Today's Lecture Agenda
+1 Project Discussion
+	
+	employee
+	
+		id
+		name => string
+		department => string
+		status => string
+		createdDate => Date 
+		createdBy => => string
+		UpdatatedBy => string
+		UpdatatedDate => Date
+		phoneno => => string
+		emailid => string
+		
+		// mapping => ManyToOne
+		country => Country Object 
+		
+	
+	Country 
+	
+		cid
+		cname
+		
+		@CrossOrigin
+		
+		
+		API 
+		1 addCountry => response => String 
+		2 updateCountry => response => String 
+		3 deleteCountry => response => String 
+		4 getAllCountry => List of Country 
+		5 getparticularCountryByID => Object of Country
+		6 addEmployee  => response => String 
+		7 Update employee  => response => String 
+		8 delete Employee => response => String 
+		9 getAllEmployee => List of Employee
+		10 getparticularEmployeeByID  => Object of Employee
+		
+		
+
+	
+
+summary & Interview Questions
+Not Allowed
