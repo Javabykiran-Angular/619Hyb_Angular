@@ -1,0 +1,51 @@
+
+<div class="container-fluid">
+    <app-header></app-header>
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col">
+            <div>
+                <button routerLink="/addemp" class="btn btn-success">Add Employee</button>
+            </div>
+            <br>
+            <table class="table table-striped table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>SR No.</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                        <th>created Date</th>
+                        <th>Created By </th>
+                        <th>Updated Date </th>
+                        <th>Updated By</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of empData;index as i" >
+                        <td> {{i+1}} </td>
+                        <td> <a [routerLink]="['/details',item.id]"> {{item.name}} </a></td>
+                        <td> {{item.department}} </td>
+                        <td ><h4><span [ngClass]="{
+                           'badge':true,
+                           'rounded-pill':true,
+                           'bg-success':item.status.toLowerCase()=== 'active',
+                           'bg-warning':item.status.toLowerCase()=== 'inactive',
+                           'bg-danger':item.status.toLowerCase()=== 'suspend'
+                        }" >{{item.status}}</span></h4>   </td>
+                        <td> {{item.createddtm | date}} </td>
+                        <td> {{item.createdby}} </td>
+                        <td> {{item.updateddtm |date:'dd-MM-yyyy'}} </td>
+                        <td> {{item.updatedby}} </td>
+                        <td> {{item.country.cname}} </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
